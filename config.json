@@ -1,0 +1,5 @@
+{
+  "alpha_vantage_api_key": "YOUR_API_KEY",
+  "s3_bucket": "YOUR_S3_BUCKET_NAME",
+  "aws_region": "YOUR_AWS_REGION"
+}
