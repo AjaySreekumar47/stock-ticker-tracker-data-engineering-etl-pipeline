@@ -1,5 +1,14 @@
 # Stock ticker tracker data engineering etl pipeline
-In this project, I used the Alpha Vantage API to build an Extract, Transform &amp; Load pipeline - and track the performance of the 5 most popular stock tickers - Google, Amazon, Microsoft, Apple &amp; Tesla.
+
+## Overview
+This project provides an ETL pipeline that pulls stock data from 5 popular stock tickers using the Alpha Vantage API - processes it, and stores it in Amazon S3 for analysis. The pipeline is built using AWS services like Lambda, Glue, Athena, and S3, with automated triggers and crawlers for seamless data integration.
+
+## Features
+**Data Retrieval:** Uses the **Alpha Vantage API** to fetch financial data.
+**Data Storage:** Stores raw and processed data in **Amazon S3**. Used **Amazon CloudWatch** for extracting data every 2 minutes for this project.
+**Data Transformation:** Leverages **AWS Glue** for data transformation and cleaning upon raw data extraction from API.
+**Data Analysis:** Uses **AWS Athena** for querying the transformed data.
+**Automation:** **AWS Lambda** functions are triggered automatically for data fetching and processing.
 
 ## WorkFlow
 
@@ -8,3 +17,9 @@ In this project, I used the Alpha Vantage API to build an Extract, Transform &am
 
 
 <img width="733" alt="image" src="https://github.com/user-attachments/assets/2f35e5e6-2bf5-410e-8469-34db72f187e4" />
+
+## Getting Started
+### Prerequisites
+AWS account with necessary services (S3, Lambda, Glue, Athena)
+Alpha Vantage API key
+Python 3.x (for local testing)
