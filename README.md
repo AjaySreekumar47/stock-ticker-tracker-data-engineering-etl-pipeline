@@ -8,7 +8,7 @@ This project provides an ETL pipeline that pulls stock data from 5 popular stock
 - **Data Storage:** Stores raw and processed data in **Amazon S3**. Used **Amazon CloudWatch** for extracting data every 2 minutes for this project.
 - **Data Transformation:** Leverages **AWS Glue** for data transformation and cleaning upon raw data extraction from API.
 - **Data Analysis:** Uses **AWS Athena** for querying the transformed data.
-- **Automation:** **AWS Lambda** functions are triggered automatically for data fetching and processing.
+- **Automation:** **AWS Lambda** and **AWS S3 trigger** functions are triggered automatically for data fetching and processing.
 
 ## WorkFlow
 
